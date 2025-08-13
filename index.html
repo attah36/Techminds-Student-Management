@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+
+        <!-- Add Student Form -->
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="text" id="courses" placeholder="Courses (comma separated)" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <!-- Student List -->
+        <h2>All Students</h2>
+        <ul id="studentList"></ul>
+
+        <!-- Unique Courses -->
+        <h2>All Unique Courses</h2>
+        <ul id="courseList"></ul>
+
+        <!-- Delete Student -->
+        <h2>Delete Student</h2>
+        <input type="text" id="deleteName" placeholder="Enter name to delete">
+        <button id="deleteBtn">Delete</button>
+
+        <!-- Search Student by ID -->
+        <h2>Search by ID</h2>
+        <input type="number" id="searchId" placeholder="Enter Student ID">
+        <button id="searchBtn">Search</button>
+        <div id="searchResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
